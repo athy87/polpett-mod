@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "egg_incubator_bottom",
+        "1": "egg_incubator_grid",
+        "2": "egg_incubator_side",
+        "3": "egg_incubator_tank",
+        "4": "egg_incubator_top",
+        "5": "egg_incubator_tank_top",
+        "missing": "egg_incubator_top"
+      },
+      "name": "default"
+    }
+  }
+}
