@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "polpett_mod:polpett_egg_sol"
+    },
+    "title": {
+      "translate": "advancements.polpett_all_eggs_acquired.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_all_eggs_acquired.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "polpett_all_eggs_acquired_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "polpett_mod:polpett_egg"
+          }
+        ]
+      }
+    },
+    "polpett_all_eggs_acquired_1": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "polpett_mod:polpett_egg_jane"
+          }
+        ]
+      }
+    },
+    "polpett_all_eggs_acquired_2": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "polpett_mod:polpett_egg_sol"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "polpett_mod:polpett_egg_placed"
+}

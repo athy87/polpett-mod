@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:coal"
+    },
+    "title": {
+      "translate": "advancements.polpett_eat_rocks.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_eat_rocks.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "polpett_eat_rocks_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "polpett_mod:polpett_egg_placed"
+}

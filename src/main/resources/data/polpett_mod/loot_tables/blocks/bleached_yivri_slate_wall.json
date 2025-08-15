@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "polpett_mod:blocks/bleached_yivri_slate_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "polpett_mod:bleached_yivri_slate_wall"
+        }
+      ]
+    }
+  ]
+}

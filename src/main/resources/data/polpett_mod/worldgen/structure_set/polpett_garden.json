@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "polpett_mod:polpett_garden",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 55,
+    "separation": 41,
+    "salt": 996082022
+  }
+}

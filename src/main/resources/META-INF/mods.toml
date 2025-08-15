@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Not specified"
+
+[[mods]]
+modId="polpett_mod"
+version="1.0"
+displayName="Polpetts!"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="Made by The Undeniable Myriath!!! >:DDD using the shortcut of MCreator"
+authors="Myriath"
+description="Adds the interactive Polpett Pet"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.polpett_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

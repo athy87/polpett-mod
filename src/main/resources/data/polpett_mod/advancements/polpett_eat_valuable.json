@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": {
+      "translate": "advancements.polpett_eat_valuable.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_eat_valuable.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "polpett_eat_valuable_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "polpett_mod:polpett_eat_rocks"
+}

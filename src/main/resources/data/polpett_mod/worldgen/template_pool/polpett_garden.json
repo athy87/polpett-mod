@@ -1,0 +1,29 @@
+{
+  "name": "polpett_mod:polpett_garden",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "polpett_mod:polpettgarden",
+        "projection": "rigid",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:block_ignore",
+              "blocks": [
+                {
+                  "Name": "minecraft:structure_block"
+                },
+                {
+                  "Name": "minecraft:structure_void"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

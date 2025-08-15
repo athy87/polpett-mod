@@ -1,0 +1,34 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "polpett_mod:polpett_egg"
+    },
+    "title": {
+      "translate": "advancements.polpett_egg_placed.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_egg_placed.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "polpett_egg_placed_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "polpett_mod:polpett_egg"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 8
+  }
+}

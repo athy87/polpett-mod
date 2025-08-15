@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:zombie_head",
+    "minecraft:player_head",
+    "minecraft:creeper_head",
+    "minecraft:pumpkin",
+    "polpett_mod:polpett_wool_hat_blue",
+    "minecraft:skeleton_skull",
+    "minecraft:wither_skeleton_skull",
+    "polpett_mod:polpett_wool_hat_grey",
+    "polpett_mod:polpett_wool_hat_pink",
+    "polpett_mod:polpett_wool_hat_green",
+    "minecraft:melon",
+    "polpett_mod:polpett_wool_hat_red"
+  ]
+}

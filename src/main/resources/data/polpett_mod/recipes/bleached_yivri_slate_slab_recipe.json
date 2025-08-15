@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "polpett_mod:bleached_yivri_slate_bricks"
+    }
+  },
+  "result": {
+    "item": "polpett_mod:bleached_yivri_slate_stairs",
+    "count": 6
+  }
+}
