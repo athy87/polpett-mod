@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "polpett_mod:block/crackled_bleached_yivri_slate",
+    "particle": "polpett_mod:block/crackled_bleached_yivri_slate"
+  },
+  "render_type": "solid"
+}

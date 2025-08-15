@@ -1,0 +1,156 @@
+{
+  "polpett.sound.happy": {
+    "subtitle": "subtitles.polpett.sound.happy",
+    "sounds": [
+      {
+        "name": "polpett_mod:polpett.happy_1",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_2",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_3",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_4",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_5",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_6",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_7",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.happy_8",
+        "stream": false
+      }
+    ]
+  },
+  "polpett.sound.hungry": {
+    "subtitle": "subtitles.polpett.sound.hungry",
+    "sounds": [
+      {
+        "name": "polpett_mod:polpett.hungry_1",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.hungry_2",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.hungry_3",
+        "stream": false
+      }
+    ]
+  },
+  "polpett.sound.sad": {
+    "subtitle": "subtitles.polpett.sound.sad",
+    "sounds": [
+      {
+        "name": "polpett_mod:polpett.sad_1",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.sad_2",
+        "stream": false
+      }
+    ]
+  },
+  "polpett.sound.verysad": {
+    "subtitle": "subtitles.polpett.sound.verysad",
+    "sounds": [
+      {
+        "name": "polpett_mod:polpett.verysad_1",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.verysad_2",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.verysad_3",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.verysad_4",
+        "stream": false
+      }
+    ]
+  },
+  "polpett.sound.hurt": {
+    "subtitle": "subtitles.polpett.sound.hurt",
+    "sounds": [
+      {
+        "name": "polpett_mod:polpett.hurt_1",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.hurt_2",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.hurt_3",
+        "stream": false
+      }
+    ]
+  },
+  "polpett.sound.idle": {
+    "subtitle": "subtitles.polpett.sound.idle",
+    "sounds": [
+      {
+        "name": "polpett_mod:polpett.idle_1",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_2",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_3",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_4",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_5",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_6",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_7",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_8",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_9",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_10",
+        "stream": false
+      },
+      {
+        "name": "polpett_mod:polpett.idle_11",
+        "stream": false
+      }
+    ]
+  }
+}

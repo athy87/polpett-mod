@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "polpett_mod:block/bleached_yivri_slate_tiles",
+    "up": "polpett_mod:block/bleached_yivri_slate_tiles",
+    "north": "polpett_mod:block/bleached_yivri_slate_bricks",
+    "east": "polpett_mod:block/bleached_yivri_slate_bricks",
+    "south": "polpett_mod:block/bleached_yivri_slate_bricks",
+    "west": "polpett_mod:block/bleached_yivri_slate_bricks",
+    "particle": "polpett_mod:block/bleached_yivri_slate_tiles"
+  },
+  "render_type": "solid"
+}

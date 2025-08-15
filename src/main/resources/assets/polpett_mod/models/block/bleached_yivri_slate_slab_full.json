@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "polpett_mod:block/bleached_yivri_slate_tiles",
+    "bottom": "polpett_mod:block/bleached_yivri_slate_tiles",
+    "top": "polpett_mod:block/bleached_yivri_slate_tiles",
+    "side": "polpett_mod:block/bleached_yivri_slate_tiles"
+  },
+  "render_type": "solid"
+}

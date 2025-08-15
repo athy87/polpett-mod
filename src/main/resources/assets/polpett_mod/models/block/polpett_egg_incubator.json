@@ -1,0 +1,15 @@
+{
+  "parent": "polpett_mod:custom/egg_incubator",
+  "textures": {
+    "all": "polpett_mod:block/egg_incubator_side",
+    "particle": "polpett_mod:block/egg_incubator_side",
+    "0": "polpett_mod:block/egg_incubator_bottom",
+    "1": "polpett_mod:block/egg_incubator_grid",
+    "2": "polpett_mod:block/egg_incubator_side",
+    "3": "polpett_mod:block/egg_incubator_tank",
+    "4": "polpett_mod:block/egg_incubator_top",
+    "5": "polpett_mod:block/egg_incubator_tank_top",
+    "missing": "polpett_mod:block/egg_incubator_top"
+  },
+  "render_type": "solid"
+}

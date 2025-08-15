@@ -1,0 +1,9 @@
+{
+  "parent": "polpett_mod:custom/polpett_egg",
+  "textures": {
+    "all": "polpett_mod:block/polpett_egg",
+    "particle": "polpett_mod:block/polpett_egg",
+    "3": "polpett_mod:block/polpett_egg"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "polpett_mod:block/bleached_yivri_slate_slab"
+    },
+    "type=top": {
+      "model": "polpett_mod:block/bleached_yivri_slate_slab_top"
+    },
+    "type=double": {
+      "model": "polpett_mod:block/bleached_yivri_slate_slab_full"
+    }
+  }
+}

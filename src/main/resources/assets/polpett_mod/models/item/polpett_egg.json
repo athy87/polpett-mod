@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "polpett_mod:item/polpett_egg_icon"
+  },
+  "render_type": "translucent"
+}
