@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "fingle_fruit_1",
+        "3": "fingle_fruit_1"
+      },
+      "name": "default"
+    }
+  }
+}
