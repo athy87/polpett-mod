@@ -28,12 +28,12 @@ import net.minecraft.core.BlockPos;
 
 import java.util.Comparator;
 
-public class PolpettEggSolOnTickUpdateProcedure {
+public class PolpettEggVanillaOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) >= 8) {
 			if ((blockstate.getBlock().getStateDefinition().getProperty("hatchprogress") instanceof IntegerProperty _getip2 ? blockstate.getValue(_getip2) : -1) >= PolpettModModVariables.WorldVariables.get(world).polpett_egg_hatch_threshhold) {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PolpettModModBlocks.POLPETT_EGG_SOL.get().defaultBlockState()));
+				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PolpettModModBlocks.POLPETT_EGG_JOHN.get().defaultBlockState()));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("block.sniffer_egg.hatch")), SoundSource.AMBIENT, 1, 1);
@@ -54,7 +54,7 @@ public class PolpettEggSolOnTickUpdateProcedure {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PolpettEntity _datEntSetS)
-					_datEntSetS.getEntityData().set(PolpettEntity.DATA_ColorType, "Sol");
+					_datEntSetS.getEntityData().set(PolpettEntity.DATA_ColorType, "Vanilla");
 			} else {
 				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("mod_id:polpett_encourage_egg_hatch")))) {
 					{
