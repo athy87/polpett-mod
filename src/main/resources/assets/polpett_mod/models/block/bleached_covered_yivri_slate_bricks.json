@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "polpett_mod:block/bleached_yivri_slate_tiles",
-    "up": "polpett_mod:block/bleached_agnezia_bed",
-    "north": "polpett_mod:block/bleached_covered_yivri_slate_bricks_side",
-    "east": "polpett_mod:block/bleached_covered_yivri_slate_bricks_side",
-    "south": "polpett_mod:block/bleached_covered_yivri_slate_bricks_side",
-    "west": "polpett_mod:block/bleached_covered_yivri_slate_bricks_side",
-    "particle": "polpett_mod:block/bleached_yivri_slate_tiles"
+    "down": "polpett_mod:block/polpett_garden_tiles",
+    "up": "polpett_mod:block/covered_polpett_garden_bricks_top",
+    "north": "polpett_mod:block/covered_polpett_garden_bricks_side",
+    "east": "polpett_mod:block/covered_polpett_garden_bricks_side",
+    "south": "polpett_mod:block/covered_polpett_garden_bricks_side",
+    "west": "polpett_mod:block/covered_polpett_garden_bricks_side",
+    "particle": "polpett_mod:block/polpett_garden_tiles"
   },
   "render_type": "solid"
 }

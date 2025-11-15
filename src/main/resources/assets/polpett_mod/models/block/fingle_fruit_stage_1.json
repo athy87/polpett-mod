@@ -1,0 +1,10 @@
+{
+  "parent": "polpett_mod:custom/finglefruitstage1",
+  "textures": {
+    "all": "polpett_mod:block/fingle_fruit_1",
+    "particle": "polpett_mod:block/fingle_fruit_1",
+    "1": "polpett_mod:block/fingle_fruit_1",
+    "3": "polpett_mod:block/fingle_fruit_1"
+  },
+  "render_type": "cutout_mipped"
+}

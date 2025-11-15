@@ -11,5 +11,5 @@
     "5": "polpett_mod:block/egg_incubator_tank_top",
     "missing": "polpett_mod:block/egg_incubator_top"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

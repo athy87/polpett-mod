@@ -1,10 +1,10 @@
 {
   "parent": "block/slab_top",
   "textures": {
-    "particle": "polpett_mod:block/bleached_yivri_slate_tiles",
-    "bottom": "polpett_mod:block/bleached_yivri_slate_tiles",
-    "top": "polpett_mod:block/bleached_yivri_slate_tiles",
-    "side": "polpett_mod:block/bleached_yivri_slate_tiles"
+    "particle": "polpett_mod:block/polpett_garden_tiles",
+    "bottom": "polpett_mod:block/polpett_garden_tiles",
+    "top": "polpett_mod:block/polpett_garden_tiles",
+    "side": "polpett_mod:block/polpett_garden_tiles"
   },
   "render_type": "solid"
 }
