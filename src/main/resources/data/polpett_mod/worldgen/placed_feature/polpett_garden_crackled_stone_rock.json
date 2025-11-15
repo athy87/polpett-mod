@@ -1,0 +1,40 @@
+{
+  "feature": "polpett_mod:polpett_garden_crackled_stone_rock",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 4
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": -1,
+          "max_inclusive": 0
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

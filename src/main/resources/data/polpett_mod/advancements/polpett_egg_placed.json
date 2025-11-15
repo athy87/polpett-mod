@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "polpett_mod:polpett_egg"
     },
@@ -13,7 +12,7 @@
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
     "polpett_egg_placed_0": {
@@ -30,5 +29,6 @@
   },
   "rewards": {
     "experience": 8
-  }
+  },
+  "parent": "polpett_mod:polpett_achievement_root"
 }

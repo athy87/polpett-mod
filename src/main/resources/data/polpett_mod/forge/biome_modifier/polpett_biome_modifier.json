@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "polpett_mod:polpett_meadows",
+  "spawners": {
+    "type": "polpett_mod:polpett",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

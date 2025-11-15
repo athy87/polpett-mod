@@ -47,6 +47,28 @@
           }
         ]
       }
+    },
+    "polpett_all_eggs_acquired_3": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "polpett_mod:polpett_egg_john"
+          }
+        ]
+      }
+    },
+    "polpett_all_eggs_acquired_4": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "polpett_mod:polpett_egg_vanilla"
+          }
+        ]
+      }
     }
   },
   "parent": "polpett_mod:polpett_egg_placed"

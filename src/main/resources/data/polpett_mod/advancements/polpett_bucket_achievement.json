@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:sweet_berries"
+      "item": "polpett_mod:polpett_bucket"
     },
     "title": {
-      "translate": "advancements.polpett_favorite_food_discover.title"
+      "translate": "advancements.polpett_bucket_achievement.title"
     },
     "description": {
-      "translate": "advancements.polpett_favorite_food_discover.descr"
+      "translate": "advancements.polpett_bucket_achievement.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,12 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "polpett_favorite_food_discover_0": {
+    "polpett_bucket_achievement_0": {
       "trigger": "minecraft:impossible"
     }
-  },
-  "rewards": {
-    "experience": 4
   },
   "parent": "polpett_mod:polpett_egg_placed"
 }

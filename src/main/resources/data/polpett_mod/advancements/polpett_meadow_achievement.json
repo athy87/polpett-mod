@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "polpett_mod:fingle_fruit_stage_4"
+    },
+    "title": {
+      "translate": "advancements.polpett_meadow_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_meadow_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "polpett_meadow_achievement_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "polpett_mod:polpett_meadows"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 4
+  },
+  "parent": "polpett_mod:polpett_achievement_root"
+}

@@ -28,7 +28,8 @@
     "lush_caves",
     "snowy_taiga",
     "badlands",
-    "ice_spikes"
+    "ice_spikes",
+    "polpett_mod:polpett_meadows"
   ],
   "use_expansion_hack": false
 }
