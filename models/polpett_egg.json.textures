@@ -17,6 +17,18 @@
         "3": "polpett_egg_sol"
       },
       "name": "sol"
+    },
+    "john": {
+      "map": {
+        "3": "polpett_egg_john"
+      },
+      "name": "john"
+    },
+    "vanilla": {
+      "map": {
+        "3": "polpett_egg_vanilla"
+      },
+      "name": "vanilla"
     }
   }
 }

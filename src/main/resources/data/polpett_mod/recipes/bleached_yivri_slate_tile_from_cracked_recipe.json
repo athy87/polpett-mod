@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "polpett_mod:crackled_bleached_yivri_slate"
+    },
+    {
+      "item": "polpett_mod:crackled_bleached_yivri_slate"
+    },
+    {
+      "item": "polpett_mod:crackled_bleached_yivri_slate"
+    },
+    {
+      "item": "polpett_mod:crackled_bleached_yivri_slate"
+    }
+  ],
+  "result": {
+    "item": "polpett_mod:bleached_yivri_slate_bricks",
+    "count": 4
+  }
+}

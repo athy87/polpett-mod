@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "polpett_mod:textures/screens/crumbled_polpett_garden_stone.png",
+    "icon": {
+      "item": "polpett_mod:polpett_egg"
+    },
+    "title": {
+      "translate": "advancements.polpett_achievement_root.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_achievement_root.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "polpett_achievement_root_0": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

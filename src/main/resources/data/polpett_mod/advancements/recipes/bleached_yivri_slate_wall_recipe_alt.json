@@ -1,0 +1,125 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "polpett_mod:bleached_yivri_slate_wall_recipe_alt"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ingredient_0": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "#minecraft:bleached_yivri_slate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_1": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:bleached_yivri_slate_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_2": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:bleached_yivri_slate_tiles"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_3": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:bleached_covered_yivri_slate_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_4": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:crackled_bleached_yivri_slate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_5": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:bleached_yivri_slate_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_6": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:bleached_yivri_slate_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ingredient_7": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "polpett_mod:bleached_yivri_slate_wall"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ingredient_0",
+      "has_ingredient_1",
+      "has_ingredient_2",
+      "has_ingredient_3",
+      "has_ingredient_4",
+      "has_ingredient_5",
+      "has_ingredient_6",
+      "has_ingredient_7"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "polpett_mod:bleached_yivri_slate_wall_recipe_alt"
+    ]
+  }
+}

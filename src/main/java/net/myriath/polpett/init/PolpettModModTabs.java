@@ -17,6 +17,14 @@ public class PolpettModModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PolpettModMod.MODID);
 	public static final RegistryObject<CreativeModeTab> POLPETT_MOD_TAB = REGISTRY.register("polpett_mod_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.polpett_mod.polpett_mod_tab")).icon(() -> new ItemStack(PolpettModModBlocks.POLPETT_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(PolpettModModItems.POLPETT_SPAWN_EGG.get());
+				tabData.accept(PolpettModModBlocks.POLPETT_EGG.get().asItem());
+				tabData.accept(PolpettModModBlocks.POLPETT_EGG_SOL.get().asItem());
+				tabData.accept(PolpettModModBlocks.POLPETT_EGG_JANE.get().asItem());
+				tabData.accept(PolpettModModBlocks.POLPETT_EGG_JOHN.get().asItem());
+				tabData.accept(PolpettModModBlocks.POLPETT_EGG_VANILLA.get().asItem());
+				tabData.accept(PolpettModModItems.POLPETT_BUCKET.get());
+				tabData.accept(PolpettModModBlocks.POLPETT_EGG_INCUBATOR.get().asItem());
 				tabData.accept(PolpettModModBlocks.CRACKLED_BLEACHED_YIVRI_SLATE.get().asItem());
 				tabData.accept(PolpettModModBlocks.BLEACHED_YIVRI_SLATE_BRICKS.get().asItem());
 				tabData.accept(PolpettModModBlocks.BLEACHED_COVERED_YIVRI_SLATE_BRICKS.get().asItem());
@@ -24,15 +32,12 @@ public class PolpettModModTabs {
 				tabData.accept(PolpettModModBlocks.BLEACHED_YIVRI_SLATE_STAIRS.get().asItem());
 				tabData.accept(PolpettModModBlocks.BLEACHED_YIVRI_SLATE_SLAB.get().asItem());
 				tabData.accept(PolpettModModBlocks.BLEACHED_YIVRI_SLATE_WALL.get().asItem());
-				tabData.accept(PolpettModModBlocks.POLPETT_EGG_INCUBATOR.get().asItem());
 				tabData.accept(PolpettModModItems.POLPETT_WOOL_HAT_GREY.get());
 				tabData.accept(PolpettModModItems.POLPETT_WOOL_HAT_BLUE.get());
 				tabData.accept(PolpettModModItems.POLPETT_WOOL_HAT_RED.get());
 				tabData.accept(PolpettModModItems.POLPETT_WOOL_HAT_GREEN.get());
 				tabData.accept(PolpettModModItems.POLPETT_WOOL_HAT_PINK.get());
-				tabData.accept(PolpettModModBlocks.POLPETT_EGG.get().asItem());
-				tabData.accept(PolpettModModBlocks.POLPETT_EGG_SOL.get().asItem());
-				tabData.accept(PolpettModModBlocks.POLPETT_EGG_JANE.get().asItem());
-				tabData.accept(PolpettModModItems.POLPETT_SPAWN_EGG.get());
+				tabData.accept(PolpettModModItems.FINGLE_FRUIT_SEEDS.get());
+				tabData.accept(PolpettModModItems.FINGLE_FRUIT.get());
 			}).build());
 }

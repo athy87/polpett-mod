@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "polpett_mod:polpett_bucket"
+    },
+    "title": {
+      "translate": "advancements.polpett_bucket_achievement.title"
+    },
+    "description": {
+      "translate": "advancements.polpett_bucket_achievement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "polpett_bucket_achievement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "polpett_mod:polpett_egg_placed"
+}

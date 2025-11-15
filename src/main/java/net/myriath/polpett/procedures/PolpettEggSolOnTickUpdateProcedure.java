@@ -33,7 +33,7 @@ public class PolpettEggSolOnTickUpdateProcedure {
 		if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) >= 8) {
 			if ((blockstate.getBlock().getStateDefinition().getProperty("hatchprogress") instanceof IntegerProperty _getip2 ? blockstate.getValue(_getip2) : -1) >= PolpettModModVariables.WorldVariables.get(world).polpett_egg_hatch_threshhold) {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PolpettModModBlocks.POLPETT_EGG.get().defaultBlockState()));
+				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PolpettModModBlocks.POLPETT_EGG_SOL.get().defaultBlockState()));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(ResourceLocation.parse("block.sniffer_egg.hatch")), SoundSource.AMBIENT, 1, 1);

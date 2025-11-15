@@ -22,5 +22,5 @@
   "rewards": {
     "experience": 3
   },
-  "parent": "polpett_mod:polpett_egg_placed"
+  "parent": "polpett_mod:polpett_favorite_food_discover"
 }

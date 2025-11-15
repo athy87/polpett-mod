@@ -22,7 +22,7 @@ import net.minecraft.world.entity.Entity;
 public class PolpettModModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, PolpettModMod.MODID);
 	public static final RegistryObject<EntityType<PolpettEntity>> POLPETT = register("polpett",
-			EntityType.Builder.<PolpettEntity>of(PolpettEntity::new, MobCategory.AXOLOTLS).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PolpettEntity::new).fireImmune().sized(0.6f, 1f));
+			EntityType.Builder.<PolpettEntity>of(PolpettEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PolpettEntity::new).fireImmune().sized(0.6f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

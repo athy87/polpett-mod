@@ -3,6 +3,7 @@ package net.myriath.polpett.entity;
 import net.myriath.polpett.procedures.PolpettRightClickedOnEntityProcedure;
 import net.myriath.polpett.procedures.PolpettOnInitialEntitySpawnProcedure;
 import net.myriath.polpett.procedures.PolpettOnEntityTickUpdateProcedure;
+import net.myriath.polpett.procedures.PolpettHungryProcedure;
 import net.myriath.polpett.procedures.PolpettFavoriteFoodGlowberriesProcedure;
 import net.myriath.polpett.procedures.PolpettFavoriteFoodCarrotsProcedure;
 import net.myriath.polpett.procedures.PolpettFavoriteFoodBerriesProcedure;
@@ -10,11 +11,13 @@ import net.myriath.polpett.procedures.PolpettFavoriteFoodBeetrootsProcedure;
 import net.myriath.polpett.procedures.PolpettFavoriteFoodApplesProcedure;
 import net.myriath.polpett.procedures.PolpettEntityIsHurtProcedure;
 import net.myriath.polpett.init.PolpettModModEntities;
+import net.myriath.polpett.init.PolpettModModBlocks;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -22,12 +25,14 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
+import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.PathfinderMob;
@@ -42,6 +47,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -85,7 +91,6 @@ public class PolpettEntity extends PathfinderMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setPersistenceRequired();
 		refreshDimensions();
 	}
 
@@ -123,7 +128,28 @@ public class PolpettEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.of(Items.BEETROOT), false) {
+		this.goalSelector.addGoal(1, new RemoveBlockGoal(PolpettModModBlocks.FINGLE_FRUIT_STAGE_4.get(), this, 1, (int) 3) {
+			@Override
+			public boolean canUse() {
+				double x = PolpettEntity.this.getX();
+				double y = PolpettEntity.this.getY();
+				double z = PolpettEntity.this.getZ();
+				Entity entity = PolpettEntity.this;
+				Level world = PolpettEntity.this.level();
+				return super.canUse() && PolpettHungryProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = PolpettEntity.this.getX();
+				double y = PolpettEntity.this.getY();
+				double z = PolpettEntity.this.getZ();
+				Entity entity = PolpettEntity.this;
+				Level world = PolpettEntity.this.level();
+				return super.canContinueToUse() && PolpettHungryProcedure.execute(entity);
+			}
+		});
+		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.BEETROOT), false) {
 			@Override
 			public boolean canUse() {
 				double x = PolpettEntity.this.getX();
@@ -144,7 +170,7 @@ public class PolpettEntity extends PathfinderMob {
 				return super.canContinueToUse() && PolpettFavoriteFoodBeetrootsProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.of(Items.GLOW_BERRIES), false) {
+		this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.of(Items.GLOW_BERRIES), false) {
 			@Override
 			public boolean canUse() {
 				double x = PolpettEntity.this.getX();
@@ -165,7 +191,7 @@ public class PolpettEntity extends PathfinderMob {
 				return super.canContinueToUse() && PolpettFavoriteFoodGlowberriesProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new TemptGoal(this, 1, Ingredient.of(Items.SWEET_BERRIES), false) {
+		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(Items.SWEET_BERRIES), false) {
 			@Override
 			public boolean canUse() {
 				double x = PolpettEntity.this.getX();
@@ -186,7 +212,7 @@ public class PolpettEntity extends PathfinderMob {
 				return super.canContinueToUse() && PolpettFavoriteFoodBerriesProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(4, new TemptGoal(this, 1, Ingredient.of(Items.APPLE), false) {
+		this.goalSelector.addGoal(5, new TemptGoal(this, 1, Ingredient.of(Items.APPLE), false) {
 			@Override
 			public boolean canUse() {
 				double x = PolpettEntity.this.getX();
@@ -207,7 +233,7 @@ public class PolpettEntity extends PathfinderMob {
 				return super.canContinueToUse() && PolpettFavoriteFoodApplesProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(5, new TemptGoal(this, 1, Ingredient.of(Items.CARROT), false) {
+		this.goalSelector.addGoal(6, new TemptGoal(this, 1, Ingredient.of(Items.CARROT), false) {
 			@Override
 			public boolean canUse() {
 				double x = PolpettEntity.this.getX();
@@ -228,20 +254,15 @@ public class PolpettEntity extends PathfinderMob {
 				return super.canContinueToUse() && PolpettFavoriteFoodCarrotsProcedure.execute(entity);
 			}
 		});
-		this.goalSelector.addGoal(6, new PanicGoal(this, 1.2));
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(9, new FloatGoal(this));
+		this.goalSelector.addGoal(7, new PanicGoal(this, 1.2));
+		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(10, new FloatGoal(this));
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
-	}
-
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
 	}
 
 	@Override
@@ -402,6 +423,8 @@ public class PolpettEntity extends PathfinderMob {
 	}
 
 	public static void init() {
+		SpawnPlacements.register(PolpettModModEntities.POLPETT.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

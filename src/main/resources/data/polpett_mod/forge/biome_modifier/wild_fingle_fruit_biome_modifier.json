@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "polpett_mod:polpett_meadows",
+  "features": "polpett_mod:wild_fingle_fruit",
+  "step": "top_layer_modification"
+}

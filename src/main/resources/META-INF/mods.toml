@@ -4,11 +4,11 @@ license="Not specified"
 
 [[mods]]
 modId="polpett_mod"
-version="1.0"
+version="1.1.0"
 displayName="Polpetts!"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-credits="Made by The Undeniable Myriath!!! >:DDD using the shortcut of MCreator"
+credits="Made by The Undeniable Myriath!!! >:DDD"
 authors="Myriath"
 description="Adds the interactive Polpett Pet"
 

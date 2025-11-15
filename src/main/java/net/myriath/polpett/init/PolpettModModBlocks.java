@@ -3,10 +3,17 @@
  */
 package net.myriath.polpett.init;
 
+import net.myriath.polpett.block.PolpettEggVanillaBlock;
 import net.myriath.polpett.block.PolpettEggSolBlock;
+import net.myriath.polpett.block.PolpettEggJohnBlock;
 import net.myriath.polpett.block.PolpettEggJaneBlock;
 import net.myriath.polpett.block.PolpettEggIncubatorBlock;
 import net.myriath.polpett.block.PolpettEggBlock;
+import net.myriath.polpett.block.FingleFruitStage4Block;
+import net.myriath.polpett.block.FingleFruitStage3Block;
+import net.myriath.polpett.block.FingleFruitStage2Block;
+import net.myriath.polpett.block.FingleFruitStage1Block;
+import net.myriath.polpett.block.FingleFruitStage0Block;
 import net.myriath.polpett.block.CrackledBleachedYivriSlateBlock;
 import net.myriath.polpett.block.BleachedYivriSlateWallBlock;
 import net.myriath.polpett.block.BleachedYivriSlateTilesBlock;
@@ -35,6 +42,13 @@ public class PolpettModModBlocks {
 	public static final RegistryObject<Block> POLPETT_EGG_INCUBATOR = REGISTRY.register("polpett_egg_incubator", () -> new PolpettEggIncubatorBlock());
 	public static final RegistryObject<Block> POLPETT_EGG_SOL = REGISTRY.register("polpett_egg_sol", () -> new PolpettEggSolBlock());
 	public static final RegistryObject<Block> POLPETT_EGG_JANE = REGISTRY.register("polpett_egg_jane", () -> new PolpettEggJaneBlock());
+	public static final RegistryObject<Block> FINGLE_FRUIT_STAGE_4 = REGISTRY.register("fingle_fruit_stage_4", () -> new FingleFruitStage4Block());
+	public static final RegistryObject<Block> FINGLE_FRUIT_STAGE_3 = REGISTRY.register("fingle_fruit_stage_3", () -> new FingleFruitStage3Block());
+	public static final RegistryObject<Block> FINGLE_FRUIT_STAGE_2 = REGISTRY.register("fingle_fruit_stage_2", () -> new FingleFruitStage2Block());
+	public static final RegistryObject<Block> FINGLE_FRUIT_STAGE_1 = REGISTRY.register("fingle_fruit_stage_1", () -> new FingleFruitStage1Block());
+	public static final RegistryObject<Block> FINGLE_FRUIT_STAGE_0 = REGISTRY.register("fingle_fruit_stage_0", () -> new FingleFruitStage0Block());
+	public static final RegistryObject<Block> POLPETT_EGG_JOHN = REGISTRY.register("polpett_egg_john", () -> new PolpettEggJohnBlock());
+	public static final RegistryObject<Block> POLPETT_EGG_VANILLA = REGISTRY.register("polpett_egg_vanilla", () -> new PolpettEggVanillaBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
