@@ -19,7 +19,7 @@ public class PolpettModModTrades {
 		if (event.getType() == PolpettModModVillagerProfessions.POLPETT_RESEARCHER.get()) {
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(PolpettModModBlocks.POLPETT_EGG.get()),
 
-					new ItemStack(Items.EMERALD, 4), 16, 10, 0.05f));
+					new ItemStack(Items.EMERALD, 6), 16, 10, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
 
 					new ItemStack(Items.CARROT, 6), 15, 2, 0.05f));
@@ -41,7 +41,7 @@ public class PolpettModModTrades {
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(PolpettModModBlocks.POLPETT_EGG.get()), new ItemStack(Blocks.BLACK_GLAZED_TERRACOTTA, 32), new ItemStack(PolpettModModBlocks.POLPETT_EGG_SOL.get()), 3, 10, 0.05f));
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(PolpettModModBlocks.POLPETT_EGG.get()), new ItemStack(Blocks.PINK_GLAZED_TERRACOTTA, 32), new ItemStack(PolpettModModBlocks.POLPETT_EGG_JANE.get()), 3, 10, 0.05f));
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(Blocks.LIGHT_GRAY_WOOL, 5), new ItemStack(PolpettModModItems.POLPETT_WOOL_HAT_GREY.get()), 5, 3, 0.05f));
-			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4),
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.EMERALD, 8),
 
 					new ItemStack(PolpettModModBlocks.POLPETT_EGG.get()), 8, 5, 0.05f));
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(Blocks.PINK_WOOL, 5), new ItemStack(PolpettModModItems.POLPETT_WOOL_HAT_PINK.get()), 5, 3, 0.05f));
@@ -51,6 +51,14 @@ public class PolpettModModTrades {
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(PolpettModModBlocks.CRACKLED_BLEACHED_YIVRI_SLATE.get(), 8),
 
 					new ItemStack(Items.EMERALD), 18, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(PolpettModModItems.FINGLE_FRUIT.get()),
+
+					new ItemStack(Items.EMERALD, 5), 14, 8, 0.05f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 7),
+
+					new ItemStack(PolpettModModItems.FINGLE_FRUIT.get()), 10, 5, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(PolpettModModBlocks.POLPETT_EGG.get()), new ItemStack(Blocks.LIME_GLAZED_TERRACOTTA, 32), new ItemStack(PolpettModModBlocks.POLPETT_EGG_JOHN.get()), 3, 10, 0.05f));
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(PolpettModModBlocks.POLPETT_EGG.get()), new ItemStack(Items.QUARTZ, 28), new ItemStack(PolpettModModBlocks.POLPETT_EGG_VANILLA.get()), 3, 15, 0.05f));
 		}
 	}
 }

@@ -9,6 +9,9 @@ import net.myriath.polpett.item.PolpettWoolHatGreyItem;
 import net.myriath.polpett.item.PolpettWoolHatGreenItem;
 import net.myriath.polpett.item.PolpettWoolHatBlueItem;
 import net.myriath.polpett.item.PolpettDebugForceEvolveItem;
+import net.myriath.polpett.item.PolpettBucketItem;
+import net.myriath.polpett.item.FingleFruitSeedsItem;
+import net.myriath.polpett.item.FingleFruitItem;
 import net.myriath.polpett.PolpettModMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -40,6 +43,16 @@ public class PolpettModModItems {
 	public static final RegistryObject<Item> POLPETT_WOOL_HAT_PINK = REGISTRY.register("polpett_wool_hat_pink", () -> new PolpettWoolHatPinkItem());
 	public static final RegistryObject<Item> POLPETT_EGG_SOL = block(PolpettModModBlocks.POLPETT_EGG_SOL);
 	public static final RegistryObject<Item> POLPETT_EGG_JANE = block(PolpettModModBlocks.POLPETT_EGG_JANE);
+	public static final RegistryObject<Item> FINGLE_FRUIT_STAGE_4 = block(PolpettModModBlocks.FINGLE_FRUIT_STAGE_4);
+	public static final RegistryObject<Item> FINGLE_FRUIT_STAGE_3 = block(PolpettModModBlocks.FINGLE_FRUIT_STAGE_3);
+	public static final RegistryObject<Item> FINGLE_FRUIT_STAGE_2 = block(PolpettModModBlocks.FINGLE_FRUIT_STAGE_2);
+	public static final RegistryObject<Item> FINGLE_FRUIT_STAGE_1 = block(PolpettModModBlocks.FINGLE_FRUIT_STAGE_1);
+	public static final RegistryObject<Item> FINGLE_FRUIT_STAGE_0 = block(PolpettModModBlocks.FINGLE_FRUIT_STAGE_0);
+	public static final RegistryObject<Item> FINGLE_FRUIT_SEEDS = REGISTRY.register("fingle_fruit_seeds", () -> new FingleFruitSeedsItem());
+	public static final RegistryObject<Item> FINGLE_FRUIT = REGISTRY.register("fingle_fruit", () -> new FingleFruitItem());
+	public static final RegistryObject<Item> POLPETT_BUCKET = REGISTRY.register("polpett_bucket", () -> new PolpettBucketItem());
+	public static final RegistryObject<Item> POLPETT_EGG_JOHN = block(PolpettModModBlocks.POLPETT_EGG_JOHN);
+	public static final RegistryObject<Item> POLPETT_EGG_VANILLA = block(PolpettModModBlocks.POLPETT_EGG_VANILLA);
 
 	// Start of user code block custom items
 	// End of user code block custom items
